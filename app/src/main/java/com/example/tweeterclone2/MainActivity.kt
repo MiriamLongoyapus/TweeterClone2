@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         displayContact()
     }
     fun displayContact(){
-        val contact1=ContactData("ivAvator","Miriam","0789564352","angela@gmail.com")
-        val contact2=ContactData("ivAvator","Miriam","0789564352","angela@gmail.com")
-        val contact3=ContactData("ivAvator","Miriam","0789564352","angela@gmail.com")
-        val contact4=ContactData("ivAvator","Miriam","0789564352","angela@gmail.com")
-        val contact5=ContactData("ivAvator","Miriam","0789564352","angela@gmail.com")
+        val contact1=ContactData("Cynthia","07886060933","cynthia@gmail.com")
+        val contact2=ContactData("mary","07895543392","mary@gmail.com")
+        val contact3=ContactData("Jane","0782364352","jane@gmail.com")
+        val contact4=ContactData("Jimbo","0756364355","jimboe@gmail.com")
+        val contact5=ContactData("Beryl","0782365368","beryl@gmail.com")
         val contactList= listOf(contact1,contact2,contact3,contact4,contact5)
         val contactAdapter=ContactAdapter(contactList)
         binding.rvTweets.layoutManager=LinearLayoutManager(this)
