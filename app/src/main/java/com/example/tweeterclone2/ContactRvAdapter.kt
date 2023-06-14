@@ -21,14 +21,7 @@ class ContactAdapter(var ContactList:List<ContactData>) : RecyclerView.Adapter<C
     override fun getItemCount(): Int {
         return ContactList.size
     }
-//    override fun onResume() {
-//        super.onResume()
-//        displayContacts()
-//        binding.btnFloating.setOnClickListener {
-//            val intent = Intent(this,AddContacts::class.java)
-//            startActivity(intent)
-//        }
-//    }
+
 
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
 
@@ -39,20 +32,12 @@ class ContactAdapter(var ContactList:List<ContactData>) : RecyclerView.Adapter<C
         binding.tvPhoneNumber.text = currentContact.phoneNumber
         binding.tvEmailAddress.text = currentContact.emailAddress
 
-        binding.btnAdd.setOnClickListener {
-            val intent = Intent(holder.itemView.context, MainActivity2::class.java)
-            holder.itemView.context.startActivity(intent)
-        }
         Picasso
             .get()
             .load(currentContact.avatar)
             .resize(280, 280)
             .centerCrop()
             .into(binding.ivAvator)
-//        binding.btnAdd.setOnClickListener {
-//            val intent = Intent(this,MainActivity2::class.java)
-//          b(intent)
-//        }
     }
 
 

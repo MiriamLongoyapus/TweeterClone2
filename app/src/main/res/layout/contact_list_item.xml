@@ -46,15 +46,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avator" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="108dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="115dp"
-        android:text="Add Contact"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvEmailAddress"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

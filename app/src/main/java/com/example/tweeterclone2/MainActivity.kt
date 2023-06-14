@@ -1,5 +1,6 @@
 package com.example.tweeterclone2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,10 +18,11 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         displayContact()
 
-//        binding...setOnClickListener {
-//            val intent = Intent(this,Contacts::class.java)
-//            startActivity(intent)
-//        }
+        binding.btnAdd.setOnClickListener {
+            val intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
+        }
+
     }
     fun displayContact(){
         val contact1=ContactData("https://media.istockphoto.com/id/1403709099/photo/african-teenage.webp?b=1&s=170667a&w=0&k=20&c=b4ux5ZbPJFsSjo0b2-4PSXCuV5SdwuA6AQtI-mCUKoo= ","Cynthia","07886060933","cynthia@gmail.com")
